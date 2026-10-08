@@ -1,0 +1,15 @@
+[project]
+name = "multi-agent-orchestration-tool"
+version = "0.1.0"
+description = "Fully autonomous Architect/Reviewer plan-convergence loop across pluggable AI CLI backends"
+requires-python = ">=3.10"
+
+[project.scripts]
+orchestrate = "orchestrator.cli:main"
+
+[tool.setuptools]
+packages = ["orchestrator"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
